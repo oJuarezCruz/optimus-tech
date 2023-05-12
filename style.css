@@ -63,7 +63,7 @@ body {
     padding: 3% 8%;
 }
 
-.subheading {
+.subtitle {
     color: var(--dark-red-color);
     font-weight: 600;
 }
@@ -75,5 +75,30 @@ body {
 
 .content {
     font-size: 1.25rem;
+    color: var(--p-color);
+}
+
+.metrics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+    margin: 6%;
+}
+
+.metrics__content-title {
+    font-size: 3.75rem;
+    color: var(--dark-red-color);
+    font-weight: 600;
+    padding: 0 0 15px 0;
+}
+
+.metrics__content-subtitle {
+    font-size: 1.125rem;
+    padding: 0 0 10px 0;
+}
+
+.metrics__content-paragraph {
+    font-weight: 400;
     color: var(--p-color);
 }
