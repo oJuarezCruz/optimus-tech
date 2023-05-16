@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --bg-color: #FFFFFF;
-    --p-color: #667085;
+    --white-color: #FFFFFF;
+    --darker-white-color: rgba(142, 36, 36, 0.05);
+    --very-light-grey-color: #EAECF0;
+    --second-very-light-grey-color: #F9FAFB;
+    --third-very-light-grey-color: #D0D5DD;
+    --grey-color: #667085;
     --dark-red-color: #8E2424;
-    --very-light-grey: #EAECF0;
-    --darker-bg-color: rgba(142, 36, 36, 0.05);
-
+    
     --font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--white-color);
     box-sizing: border-box;
     font-size: 1rem;
     font-family: var(--font-family);
@@ -30,7 +32,7 @@ body {
 
 .navbar__menu__item {
     text-decoration: none;
-    color: var(--p-color);
+    color: var(--grey-color);
 }
 
 .navbar__menu__item:hover {
@@ -51,9 +53,9 @@ body {
 
 .register {
     padding: 0.938em;
-    border-radius: 8px;
+    border-radius: 0.5em;
     background-color: var(--dark-red-color);
-    color: var(--bg-color);
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -78,7 +80,7 @@ body {
 
 .header__content {
     font-size: 1.25rem;
-    color: var(--p-color);
+    color: var(--grey-color);
 }
 
 .metrics {
@@ -93,17 +95,17 @@ body {
     font-size: 3.75rem;
     color: var(--dark-red-color);
     font-weight: 600;
-    padding: 0 0 15px 0;
+    padding: 0 0 0.625em 0;
 }
 
 .metrics__content-subtitle {
     font-size: 1.125rem;
-    padding: 0 0 10px 0;
+    padding: 0 0 0.625em 0;
 }
 
 .metrics__content-paragraph {
     font-weight: 400;
-    color: var(--p-color);
+    color: var(--grey-color);
 }
 
 .talent {
@@ -111,14 +113,13 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    row-gap: 30px;
+    row-gap: 1.875em;
 }
 
 .talent__subtitle {
-    background-color: var(--darker-bg-color);
-    width: max-content;
+    background-color: var(--darker-white-color);
     padding: 0.625em;
-    border-radius: 15px;
+    border-radius: 1.75em;
     align-self: center;
     font-size: 0.875rem;
     color: var(--dark-red-color);
@@ -130,7 +131,7 @@ body {
 }
 
 .talent__paragraph {
-    color: var(--p-color);
+    color: var(--grey-color);
     font-size: 1.25rem;
     font-weight: 400;
 }
@@ -157,8 +158,8 @@ body {
 }
 
 .job__section__content {
-    border: 1px solid var(--very-light-grey);
-    border-radius: 12px;
+    border: 1px solid var(--very-light-grey-color);
+    border-radius: 0.75em;
     padding: 1.875em 1.25em;
     margin: 0.938em 0;
     display: flex;
@@ -173,7 +174,8 @@ body {
 
 .job-info {
     display: flex;
-    color: var(--p-color);
+    color: var(--grey-color);
+    gap: 1.25em;
 }
 
 .testimony {
@@ -181,11 +183,11 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    row-gap: 30px;
-    background-color: var(--darker-bg-color);
+    row-gap: 1.875em;
+    background-color: var(--darker-white-color);
     margin: 0 18% 8%;
     padding: 4% 2%;
-    border-radius: 15px;
+    border-radius: 0.938em;
 }
 
 .testimony__title {
@@ -199,11 +201,65 @@ body {
 }
 
 .testimony__attribution__title {
-    padding-top: 20px;
+    padding-top: 1.25em;
 }
 
 .testimony__attribution__paragraph {
-    color: var(--p-color);
+    color: var(--grey-color);
     font-size: 0.875rem;
     font-weight: 400;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 6% 6% 3%;
+    row-gap: 1.785em;
+    background-color: var(--second-very-light-grey-color);
+}
+
+.form-footer__title {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.form-footer__subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--grey-color);
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    gap: 1.785em;
+}
+
+.form-footer__form {
+    border: 1px solid var(--third-very-light-grey-color);
+    border-radius: 0.5em;
+    padding: 0.313em 0.625em;
+    width: 18.75em;
+    background-color: var(--white-color);
+}
+
+.form-footer__form::placeholder {
+    color: var(--grey-color);
+    font-weight: 400;
+}
+
+.form-footer__button {
+    padding: 0.938em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: var(--dark-red-color);
+    color: var(--white-color);
+}
+
+.form-footer__attribution {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--grey-color);
 }
