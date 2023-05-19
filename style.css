@@ -256,6 +256,7 @@ body {
     border: none;
     background-color: var(--dark-red-color);
     color: var(--white-color);
+    cursor: pointer;
 }
 
 .form-footer__attribution {
